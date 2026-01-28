@@ -1,6 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Switching to sans-serif for a cleaner mobile look as seen in images */
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -180,4 +186,144 @@ body {
 .info-link img {
     width: 20px;
     height: auto;
+}
+
+/* Responsive Media Queries */
+
+/* Tablet & Smaller Desktop */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        gap: 30px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .info-title {
+        font-size: 45px;
+    }
+}
+
+/* Mobile Breakpoint (768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        margin-left: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        flex: none;
+    }
+
+    .hero-left {
+        padding: 50px 20px;
+        background: linear-gradient(to bottom, #fff5a8, #fcbaba);
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-left h1 {
+        font-size: 36px;
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .hero-btn {
+        margin: 0 auto;
+        padding: 12px 60px;
+    }
+
+    .hero-right {
+        height: 300px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        padding: 60px 20px;
+        height: auto;
+        gap: 40px;
+    }
+
+    .gallery {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallery-col-stack,
+    .gallery-col-tall {
+        width: 100%;
+    }
+
+    .gallery-col-stack {
+        height: auto;
+        gap: 20px;
+    }
+
+    .gallery-col-stack img {
+        height: 250px;
+    }
+
+    .gallery-col-tall {
+        height: 350px;
+    }
+
+    .info-box-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .info-box {
+        padding: 40px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .info-title {
+        font-size: 32px;
+    }
+
+    .info-link {
+        justify-content: center;
+    }
+}
+
+/* Extra Small Mobile (480px) */
+@media screen and (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 28px;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
 }
