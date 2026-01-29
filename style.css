@@ -5,7 +5,6 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* Switching to sans-serif for a cleaner mobile look as seen in images */
     overflow-x: hidden;
 }
 
@@ -48,6 +47,7 @@ body {
     height: 600px;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .hero-left {
@@ -106,9 +106,9 @@ body {
 }
 
 .info-section {
+    width: 100%;
     padding: 100px 50px;
-    background: linear-gradient(to right, #fff9c4, #ff8bf36c, #ffb6ff94);
-    /* Approximating the wide gradient */
+    background: linear-gradient(to right, #fff5a8, #fcbaba);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,13 +120,14 @@ body {
     display: flex;
     gap: 20px;
     height: 500px;
+    width: 50%;
 }
 
 .gallery-col-stack {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 250px;
+    width: 100%;
 }
 
 .gallery-col-stack img {
@@ -136,7 +137,7 @@ body {
 }
 
 .gallery-col-tall {
-    width: 250px;
+    width: 100%;
 }
 
 .gallery-col-tall img {
@@ -148,11 +149,12 @@ body {
 .info-box-container {
     flex: 1;
     max-width: 500px;
+    width: 50%;
 }
 
 .info-box {
     background-color: #fe6f6f;
-    padding: 60px 50px;
+    padding: 40px 20px;
     color: black;
     display: flex;
     flex-direction: column;
@@ -161,7 +163,7 @@ body {
 
 .info-subtitle {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -169,15 +171,15 @@ body {
     font-size: 55px;
     line-height: 1;
     margin: 0;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 4.5px;
 }
 
 .info-link {
     margin-top: 20px;
     text-decoration: none;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -188,9 +190,7 @@ body {
     height: auto;
 }
 
-/* Responsive Media Queries */
 
-/* Tablet & Smaller Desktop */
 @media screen and (max-width: 1024px) {
     .navbar {
         gap: 30px;
@@ -209,7 +209,7 @@ body {
     }
 }
 
-/* Mobile Breakpoint (768px) */
+
 @media screen and (max-width: 768px) {
     .navbar {
         justify-content: space-between;
@@ -317,7 +317,7 @@ body {
     }
 }
 
-/* Extra Small Mobile (480px) */
+
 @media screen and (max-width: 480px) {
     .hero-left h1 {
         font-size: 28px;
